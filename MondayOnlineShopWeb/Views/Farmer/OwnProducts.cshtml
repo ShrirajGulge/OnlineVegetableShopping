@@ -1,0 +1,28 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "OwnProducts";
+}
+
+<h2>Your Own Products</h2>
+
+<style>
+    .container2 {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+<div class="container2">
+    <ol>
+        @{
+            List<Product> allProducts = this.ViewData["allProducts"] as List<Product>;
+
+            foreach (Product product in allProducts)
+            {
+                <li><a href="/products/details/@product.ID"> @product.Title</a> </li>
+            }
+        }
+    </ol>
+</div>
+

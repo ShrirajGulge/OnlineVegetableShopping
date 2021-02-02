@@ -1,0 +1,46 @@
+﻿@using BOL
+@using BLL
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+</style>
+
+<h2>My Shopping Cart</h2>
+<hr />
+@{
+    Cart myCart = (Cart)Model;
+    foreach (Item theItem in myCart.items)
+    {
+        Product theProduct = BusinessManager.GetProduct(theItem.ProductID);
+        <img src="@theProduct.ImageUrl" width="100" height="100" />
+        <p> @theProduct.Title      : @theItem.Quantity  <a href="">update</a> | <a href="">remove</a></p>
+    }
+    <a href="/products/index"> <button class="button button1" type="button" onclick="onClick()">Place Order </button></a>
+
+}
+
+<script>
+    var onClick = function () {
+        console.log("Order is place");
+    }
+</script>
+

@@ -1,0 +1,114 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "Update";
+}
+    <style>
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+        .container1 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+
+<h2>Update</h2>
+@{
+    Product theProduct = Model as Product;
+
+    <div class="container1">
+
+        <hr />
+        <form method="post">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        ID
+                    </td>
+                    <td>
+                        <input type="text" name="id" value="@theProduct.ID" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Title
+                    </td>
+                    <td>
+                        <input type="text" required name="title" value="@theProduct.Title"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Description
+                    </td>
+                    <td>
+                        <input type="text" name="description" value="@theProduct.Description"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unit Price
+                    </td>
+                    <td>
+                        <input type="text" name="unitprice" value="@theProduct.UnitPrice"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Quantity
+                    </td>
+                    <td>
+                        <input type="text" name="quantity" value="@theProduct.Quantity"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Image Url
+                    </td>
+                    <td>
+                        <input type="text" name="imageurl" value="@theProduct.ImageUrl"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Farmer -->
+                    </td>
+                    <td>
+                    <!--  <input type="text" name="farmer" value="@theProduct.Farmer" />  -->
+                        <label>@theProduct.Farmer</label>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" >Insert</button>
+                        <td>
+                    <tr>
+                </table>
+            </form>
+        </div>
+
+
+    }
+

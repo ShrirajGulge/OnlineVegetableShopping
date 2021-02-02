@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+    <style>
+        
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+        .container1 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+
+
+<h2> New Customer</h2>
+
+<div class="container1">
+    <form method="post">
+        <table style="width:100%">
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name="id" /></td>
+
+            </tr>         
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text" required name="name" />
+                </td>
+            </tr>          
+           <tr>
+
+                <td>
+                    Gender
+                </td>
+                <td>
+                    <input type="text" name="gender" />
+                </td>
+            </tr>
+           
+           <tr>
+
+                <td>
+                    Age
+                </td>
+                <td>
+                    <input type="text" name="age" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Location
+                </td>
+                <td>
+                    <input type="text" name="location" />
+                </td>
+            </tr>
+            
+
+            <tr>
+
+                <td>
+                    Phonenumber
+                </td>
+                <td>
+                    <input type="text" name="phonenumber" />
+                </td>
+            </tr>
+           
+
+            <tr>
+
+                <td>
+                    Role
+                </td>
+                <td>
+                    <input type="text" name="role" />
+                </td>
+            </tr>
+           
+            <tr>
+
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="text" name="email" />
+                </td>
+            </tr>          
+
+            <tr>
+
+                <td>
+                    Password
+                </td>
+                <td>
+                    <input type="text" name="password" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button type="submit" onclick="onClick()">Insert</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+    <script>
+        var onClick = function () {
+            console.log("Button is clicked......");
+        }
+    </script>

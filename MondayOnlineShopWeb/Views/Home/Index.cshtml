@@ -1,0 +1,56 @@
+﻿<style>
+    .container {
+        width: 992px;
+    }
+
+    .imgs {
+        width: 100%;
+    }
+</style>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div id="header" style="background-color: rgb(110, 238, 117);border:2px solid blue; border-radius:5px;">
+    <img class="imgs" src="/backg.jpg" />
+    <br>
+    <h3 style="margin-left: 70px;margin-top: unset; ">Welcome to . . .</h3>
+    <h1 style="margin-left: 150px;">FARMPLE -The E-Market Yard</h1>
+    <marquee>Organic Garden</marquee>
+</div>
+
+
+<hr />
+
+<a href="/home/index"> <button class="button button1" type="button">Home</button></a>| <a href="/accounts/login"> <button class="button button1" type="button">Login</button></a>|
+<a href="/home/aboutus"> <button class="button button1" type="button">About US</button></a>| <a href="/home/contactus"> <button class="button button1" type="button">Contact Us</button></a>
+
+<div class="jumbotron text-center">
+    <h1>Farmple</h1>
+
+    <p>From Farm to your  home...</p>
+</div>
+
+<div class="container" style="border:2px solid blue; border-radius:5px;">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Flowers</h3>
+            <p><a href="/products/index">Let us decorate your Sweet Home</a></p>
+        </div>
+        <div class="col-sm-4">
+            <a href="/products/index">
+                <h3>Vegetables</h3>
+            </a>
+
+            <p>Let us charge with right food</p>
+        </div>
+        <div class="col-sm-4">
+            <a href="/products/index">
+                <h3>Fruits</h3>
+            </a>
+
+            <p>Let us energies with Healty diet</p>
+        </div>
+    </div>
+</div>

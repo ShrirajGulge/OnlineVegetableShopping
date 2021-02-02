@@ -1,0 +1,23 @@
+﻿@using System.Data;
+
+@{
+    ViewBag.Title = "Chart";
+}
+
+
+<h2>Flowers Sales for year 2020</h2>
+@{
+    var dataSet = new DataSet();
+    dataSet.ReadXmlSchema(Server.MapPath("~/App_Data/Data.xsd"));
+    dataSet.ReadXml(Server.MapPath("~/App_Data/Data.xml"));
+
+    var dataView = new DataView(dataSet.Tables[0]);
+
+    var myChart = new Chart(width: 500, height: 400)
+        .AddTitle("Saler Per Flower")
+        .AddSeries("Default", chartType: "Line",
+            xValue: dataView, xField: "Name",
+            yValues: dataView, yFields: "Sales")
+        .Write();
+}
+

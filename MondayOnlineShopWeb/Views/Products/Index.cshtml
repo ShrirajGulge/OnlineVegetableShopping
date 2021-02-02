@@ -1,0 +1,53 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> All Products Available</h2>
+<hr />
+<style>
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+
+<div class="container2">
+    <ol>
+        @{
+            List<Product> allProducts = this.ViewData["allProducts"] as List<Product>;
+
+            foreach (Product product in allProducts)
+            {
+                <li><a href="/products/details/@product.ID"> @product.Title</a> </li>
+            }
+        }
+    </ol>
+    <a href="/shoppingcart/index"> <button class="button button1" type="button">Your cart </button></a>
+    <a href="/accounts/logout"> <button class="button button1" type="button">Logout </button></a>
+
+</div>

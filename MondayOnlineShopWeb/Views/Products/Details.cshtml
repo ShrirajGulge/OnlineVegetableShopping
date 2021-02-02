@@ -1,0 +1,32 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Product Details</h2>
+<hr />
+<!-- This is web style comment -->
+@{
+    /* this is standard comment */
+    // This is my comment
+    Product theProduct = Model as Product;
+
+    <img src="@theProduct.ImageUrl" width="100" height="100" />
+    <p> Id: @theProduct.ID</p>
+    <p> Title: @theProduct.Title</p>
+    <p> Description: @theProduct.Description</p>
+    <p> Unit Price: @theProduct.UnitPrice</p>
+    <p> Quantity: @theProduct.Quantity</p>
+    <br />
+    if (ViewBag.urole == "customer")
+    {
+        <a href="/shoppingcart/addtocart/@theProduct.ID">Add To Cart</a>
+    }
+    if (ViewBag.urole == "farmer")
+    {
+        <a href="/products/update/@theProduct.ID">Update</a>
+        <a href="/products/delete/@theProduct.ID">Delete</a>
+
+
+    }
+}

@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Insert";
+}
+<style>
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    .container1 {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<h2>Insert New Product</h2>
+<div class="container1">
+    
+    <hr />
+    <form method="post">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    ID
+                </td>
+                <td>
+                    <input type="text" name="id" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Title
+                </td>
+                <td>
+                    <input type="text" required name="title" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Description
+                </td>
+                <td>
+                    <input type="text" name="description" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Unit Price
+                </td>
+                <td>
+                    <input type="text" name="unitprice" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Quantity
+                </td>
+                <td>
+                    <input type="text" name="quantity" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Image Url
+                </td>
+                <td>
+                    <input type="text" name="imageurl" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Farmer
+                </td>
+                <td>
+                    <input type="text" name="farmer" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" onclick="onClick()">Insert</button>
+                <td>
+            <tr>
+        </table>
+    </form>
+</div>
+
+    <script>
+        var onClick = function () {
+            console.log("Button is clicked......");
+        }
+    </script>

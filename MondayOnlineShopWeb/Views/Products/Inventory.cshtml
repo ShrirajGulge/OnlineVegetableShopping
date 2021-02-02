@@ -1,0 +1,20 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> All Flowers available Inventory </h2>
+<hr />
+
+<a href="/products/insert "> Insert New Product</a>
+<ol>
+    @{
+        List<Product> allProducts = this.ViewData["allProducts"] as List<Product>;
+
+        foreach (Product product in allProducts)
+        {
+            <li><a href="/products/details/@product.ID"> @product.Title</a> | <a href="/products/update/@product.ID"> update</a>|<a href="/products/delete/@product.ID">delete</a> </li>
+        }
+    }
+</ol>
+

@@ -1,0 +1,16 @@
+D:\TAP\IACSDSolution\BOL\bin\Debug\BOL.dll
+D:\TAP\IACSDSolution\BOL\bin\Debug\BOL.pdb
+D:\TAP\IACSDSolution\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+D:\TAP\IACSDSolution\BOL\obj\Debug\BOL.dll
+D:\TAP\IACSDSolution\BOL\obj\Debug\BOL.pdb
+D:\TAP\IACSDSolution\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+E:\shriraj\CDAC\MS.NET\Day_14\IACSDSolution\BOL\bin\Debug\BOL.dll
+E:\shriraj\CDAC\MS.NET\Day_14\IACSDSolution\BOL\bin\Debug\BOL.pdb
+E:\shriraj\CDAC\MS.NET\Day_14\IACSDSolution\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
+E:\shriraj\CDAC\MS.NET\Day_14\IACSDSolution\BOL\obj\Debug\BOL.dll
+E:\shriraj\CDAC\MS.NET\Day_14\IACSDSolution\BOL\obj\Debug\BOL.pdb
+D:\editedIACSDSolution\BOL\bin\Debug\BOL.dll
+D:\editedIACSDSolution\BOL\bin\Debug\BOL.pdb
+D:\editedIACSDSolution\BOL\obj\Debug\BOL.dll
+D:\editedIACSDSolution\BOL\obj\Debug\BOL.pdb
+D:\editedIACSDSolution\BOL\obj\Debug\BOL.csprojAssemblyReference.cache
